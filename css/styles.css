@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  background-color: #ccc;
+
+}
+
+hr{
+  margin: .5rem 0;
+}
+
+.bannerPrincipal{
+  
+  background-color: rgba(0, 0, 0);
+
+
+}
+
+.titulo{
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+  padding: 0 1rem;
+  position: absolute;
+  
+}
+
+.subMenu{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-bottom: .3rem;
+}
+
+.socialNav{
+  color: #000;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: end;
+  text-decoration: none;
+  
+}
+
+.socialNav a{
+  color: #fff;
+  text-decoration: none;
+  padding: .2rem;
+  
+}
+
+.socialNav i:hover{
+  color: #ccc;
+  
+}
+
+#containerSelect{ 
+  margin: 1rem;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  grid-column-start: 2;
+}
+
+#selectProductos{
+  border: none;
+  color: #fff;
+  border-bottom: #fff solid 2px;
+  text-align: center;
+  background-color: transparent;
+  width: 30rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3rem;
+}
+
+#myBtn{
+  justify-self: end;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  border-radius: 50%;
+  padding: .5rem;
+}
+
+#myBtn:hover{
+  background-color: #004d7a;
+}
+#myBtn:hover i{
+  color: #fff !important;
+}
+#myBtn:hover p{
+  color: #fff !important;
+}
+
+#iconCarrito{
+  margin: 0;
+  padding-top: 10%;
+  font-size: 45px;
+}
+
+#filterOption{
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3rem;
+  background-color: rgba(0, 0, 0);
+
+}
+
+#contenedorProductos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.containerProductos{
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+}
+
+.asideProductos{
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: .5rem 1rem 0 1rem;
+
+}
+
+.asideProductos ul{
+  padding: 0;
+  list-style: none;
+}
+
+.asideProductos ul li a{
+  text-decoration: none;
+  color: #fff;
+  text-shadow: #000 1px 1px;
+}
+.asideProductos ul li a:hover{
+  color: #ddd;
+}
+
+
+
+
+.divContadorCarrito p{
+  margin: 0;
+  padding: 0;
+}
+
+#contadorCarrito{
+  margin: 0;
+  padding: 0;
+  font-size: 35px;
+}
+
+.productoEnCarrito{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.productoEnCarrito span{
+  width: 15rem;
+}
+
+.productoEnCarrito p{
+  margin: 0;
+  padding: 0;
+}
+
+.productoEnCarrito button{
+  border: none;
+  background-color: transparent;
+  color: red;
+
+}
+
+#footer{
+  background-color: #000;
+  color: #fff;
+  height: 50vh;
+}

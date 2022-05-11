@@ -1,0 +1,36 @@
+.gridWrapper{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+  }
+  
+  .uno{
+    background-color: rgba(221, 221, 221, 0.3);
+    width: 100%;
+  
+  }
+  
+  .mostrador{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .productoEnMostrador{
+    background-color: #fff;
+    width: 10rem;
+    border-radius: 5px;
+    transition: transform 0.3s;
+  }
+  
+  .productoEnMostrador:hover{
+    transform: scale(1.05);
+  }
+  
+  .top img{
+    border: 2px solid transparent;
+    width: 100%;
+    
+  }
+  
+  

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/modalProductoAgregado.css">
+  <link rel="stylesheet" href="css/modal.css" />
+  <link rel="stylesheet" href="css/card.css">
+  <link rel="icon" href="img/icon.png" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <link rel="stylesheet" href="css/modalAsideCarrito.css">
+  <script src="https://kit.fontawesome.com/fe4d659710.js" crossorigin="anonymous"></script>
+  <title>MarketPlace con CoderHouse</title>
+
+</head>
+
+<body>
+  <!-- banner principal -->
+  <div class="shadow  bannerPrincipal">
+    <div>
+      <h1 class="h1 titulo">MerchOnline</h1>
+    </div>
+      <div class="socialNav">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#" id="login"><i class="fa-solid fa-user"></i></a>
+        <a href="#" id="modoNoche"><i class="fa-solid fa-moon"></i></a>
+        <a href="#" id="modoDia"><i class="fa-solid fa-sun"></i></a>
+        <!-- <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>     -->   
+      </div>
+      
+    <div class="subMenu">
+      <!-- filtro de productos -->
+      <div id="containerSelect">
+        <select id="selectProductos">
+          <option id="filterOption" value="all">Todos</option>
+          <option id="filterOption" value="silla">Sillas</option>
+          <option id="filterOption" value="placa de video">Placas de video</option>
+          <option id="filterOption" value="perisferico">Perisfericos</option>
+          <option id="filterOption" value="procesador">Procesadores</option>
+          <option id="filterOption" value="disco">Discos</option>
+          <option id="filterOption" value="tv">Tv</option>
+          <option id="filterOption" value="consola">Consolas</option>
+          <option id="filterOption" value="escritorio">Escritorio</option>
+        </select>
+      </div>
+
+      <!-- boton de carrito -->
+      <button id="myBtn">
+        <i class="material-icons text-success" id="iconCarrito">shopping_cart</i>
+        <p class="text-success" id="contadorCarrito">0</p>
+      </button>
+    </div>
+  </div>
+
+  <!-- modal para mostrar carrito -->
+  <div class="modalCarrito">
+    <div class="modalContentCarrito">
+      <div class="modalHeaderCarrito">
+        <h2>Carrito de Compras</h2>
+      </div>
+      <div class="" id="contenedorCarrito">
+      </div>
+      <div>
+        <hr>
+        <span class="totalCarrito">Total: $</span>
+        <span id="precioTotal">0</span>
+      </div>
+      <div class="modalFinalizarCompra">
+        <button id="modalFinalizarCompra">Iniciar Compra</button>
+        <p id="cerrarModal">Seguir comprando</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal checkout -->
+
+  <div class="modalCheckout">
+    <div class="modalContentCheckout">
+      <h2 class="text-center">MÉTODO DE PAGO</h2>
+
+      <form action="" class="formatForm">
+        <select name="tarjetas" id="formContentCard">
+          <option value="vcredito">Visa Debito</option>
+          <option value="vdebito">Visa Credito</option>
+          <option value="mcredito">MasterCard Credito</option>
+          <option value="mdebito">MasterCard Debito</option>
+        </select>
+        <label for="card" id="titleCardForm">Numero de tarjeta</label>
+        <input type="text" placeholder="XXXX-XXXX-XXXX-XXXX" id="contentCardForm">
+        <select name="bancos" id="formContentBank">
+          <option value="Banco Galicia">Banco Galicia</option>
+          <option value="Banco Nacion">Banco Nacion</option>
+          <option value="Banco Frances">Banco Frances</option>
+          <option value="Banco Provincia">Banco Provincia</option>
+          <option value="Banco Patagonico">Banco Patagonico</option>
+          <option value="Banco Santander">Banco Santander</option>
+        </select>
+        <label for="expiration" id="expCardForm">Mes de vencimiento</label>
+        <select name="expiration" id="expForm">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select>
+        <label for="yearExpiration">Año de vencimiento</label>
+        <select name="yearExpiration" id="yearExpirationForm">
+          <option value="2022">2022</option>
+          <option value="2023">2023</option>
+          <option value="2024">2024</option>
+          <option value="2025">2025</option>
+          <option value="2026">2026</option>
+        </select>
+        <label for="nombreImpresoEnTarjeta" id="fullNameCard">Nombre y Apellido impreso en la tarjeta</label>
+        <input type="text" name="nombreImpresoEnTarjeta" id="fullNameCardForm">
+        <label for="codeCard" id="codeCard">Codigo de seguridad</label>
+        <input type="text" id="codeCardForm" name="codeCard">
+        <label for="DI" id="titleDI">Numero de Documento</label>
+        <select name="DI" id="DIForm">
+          <option value="DNI">DNI</option>
+          <option value="DNI">CUIL</option>
+          <option value="DNI">CUIT</option>
+        </select>
+        <input type="text" name="DI" id="DINumberForm">
+        <input type="submit" id="submitButton" value="Finalizar Compra">
+        <hr>
+        <span id="precioTotalCheckout">Precio Total: $</span>
+        <span id="precioTotal1"></span>
+      </form>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Contenedor de productos -->
+  <div class="containerProductos">
+    <!-- filtros testing -->
+    <aside class="asideProductos">
+      <h5>Hardware y Componentes</h5>
+      <ul>
+        <li><a href="#">Precio: menor</a></li>
+        <li><a href="#">Envio Gratis</a></li>
+        <li><a href="#">Descuentos</a></li>
+        <li><a href="#">40% off</a></li>
+        <li><a href="#">Otros</a></li>
+      </ul>
+    </aside>
+    <div class="container" id="contenedorProductos"></div>
+  </div>
+
+  <footer>
+    <div class="text-center" id="footer">
+      <span>Hecho en CoderHouse con mucho ☕ y 💻.</span>
+    </div>
+  </footer>
+
+  <!-- Scripts Bootstrap, stock y app -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="js/login.js"></script>
+  <script src="js/modoNocheDia.js"></script>
+  <script src="js/stock.js"></script>
+  <script src="js/modalAsideCarrito.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
+
+

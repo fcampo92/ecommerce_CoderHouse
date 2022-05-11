@@ -1,0 +1,27 @@
+.modalProdAdd{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  /* height: 100%; /* Full height */
+  overflow: hidden; /* Enable scroll if needed */
+  /* background-color: rgb(0,0,0); /* Fallback color */ 
+  /* background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modalProdAddContainer{
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 1rem;
+  border: #b6d4fe solid 1px;
+  background-color: #cfe2ffd7;
+}
+
+.modalProdAddContainer span{
+  color: #084298;
+  font-family: 'Roboto', sans-serif;
+}

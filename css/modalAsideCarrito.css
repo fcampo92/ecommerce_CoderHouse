@@ -1,0 +1,280 @@
+.modalCarrito{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    overflow: auto;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+@-webkit-keyframes animatetop {
+    from {right:-10rem; opacity:0} 
+    to {right:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {right:-10rem; opacity:0}
+    to {right:0; opacity:1}
+  }
+
+.modalContentCarrito{
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: #fff;
+    padding: 2rem;
+    width: 32rem;
+    box-shadow: #000 0.2px 0.2px 5px;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+.modalHeaderCarrito{
+    color: #000;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+}
+.modalHeaderCarrito span{
+    display: inline;
+    font-size: 2rem;
+    color: #999;
+    cursor: pointer;
+}
+
+.modalHeaderCarrito span:hover{
+    color: #000;
+}
+
+.modalHeaderCarrito h2{
+
+    padding: 0;
+    margin: 0 1rem;
+}
+
+.productoEnCarrito{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-gap: 1rem;
+
+}
+
+.productoEnCarrito button{
+    color: #666;
+}
+
+.productoEnCarrito button:hover{
+    color: #000;
+}
+
+.modalBodyCarrito{
+
+}
+
+.modalBodyCarrito span{
+    
+}
+
+.modalFinalizarCompra{
+
+    text-align: center;
+}
+
+.modalFinalizarCompra button{
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+}
+
+.modalFinalizarCompra p{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.square{
+    /* display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-gap: 1rem; */
+    /* border: #666 solid 1px; */
+}
+
+.left img{
+    width: 5rem;
+}
+
+.center{
+    font-size: 1rem;
+}
+
+.center span{
+
+
+    padding: 0.5rem;
+}
+
+.cantItem{
+    border-bottom: #666 solid 1px;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-end;
+    text-align: right;
+    align-items: end;
+    font-weight:600 ;
+    width: 5rem;
+    
+}
+
+.right button{
+    text-align: right;
+    width: 2rem;
+}
+
+.totalCarrito{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+#precioTotal{
+    font-size: 1.1rem
+}
+
+
+/* -------------------------------------------------------------------------------------------------------- */
+/* checkout */
+
+.modalCheckout{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+
+}
+
+.modalContentCheckout{
+    position: fixed;
+    background-color: #fff;
+    padding: 0;
+    right: 0;
+    border: 1px solid #888;
+    width: 32rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.formatForm{
+    padding: .8rem;
+    
+}
+
+#formContentCard{
+    display: block;
+    margin-bottom: .5rem;
+    width: 30rem;
+}
+
+#titleCardForm{
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: .8rem;
+}
+
+#contentCardForm{
+    width: 30rem;
+    margin-bottom: .5rem;
+}
+
+#formContentBank{
+    width: 30rem;
+    display: block;
+    margin-bottom: .5rem;
+}
+
+#expCardForm{
+    width: 10rem;
+}
+
+#expForm{
+    width: 5rem;
+}
+
+
+#yearExpirationForm{
+    width: 5rem;
+}
+
+.formatForm label{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: .8rem;
+    width: 9.2rem;
+}
+
+#fullNameCard{
+    margin-top: .5rem;
+    display: block;
+    width: 100%;
+}
+
+#fullNameCardForm{
+    width: 30rem;
+    margin-bottom: .5rem;
+}
+
+#codeCard{
+    display: block;
+    background-color: ;
+}
+
+#codeCardForm{
+    width: 30rem;
+    display: block;
+    margin-bottom: .5rem;
+}
+
+#titleDI{
+    display: block;
+    width: 30rem;
+}
+
+#DIForm{
+    height: 1.73rem;
+    width: 15rem;
+}
+
+#DINumberForm{
+    width: 14.8rem;
+    margin-bottom: .5rem;
+}
+
+#submitButton{
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+}
+
+#precioTotalCheckout{
+    font-weight: 600;
+}
+
+#precioTotal1{
+    font-weight: 600;
+}
