@@ -97,6 +97,21 @@
     text-decoration: underline;
     cursor: pointer;
 }
+.modalIniciarCompra{
+
+    text-align: center;
+}
+
+.modalIniciarCompra button{
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+}
+
+.modalIniciarCompra p{
+    text-decoration: underline;
+    cursor: pointer;
+}
 
 
 

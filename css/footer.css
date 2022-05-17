@@ -1,0 +1,28 @@
+#footer{
+    background-color: #000;
+    color: #fff;
+  }
+
+.footerContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+}
+  
+
+.footerBox1, .footerBox2, .footerBox1 a, .footerBox2 a{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    text-decoration: none;
+    text-align: left;
+    
+}
+
+#endFooter{
+margin-top: 7rem;
+
+
+}

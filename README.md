@@ -1,1 +1,2 @@
-# ecommerce_coderhouse
+# ecommerce_CoderHouse
+# ecommerce_CoderHouse

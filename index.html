@@ -16,16 +16,34 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
   <link rel="stylesheet" href="css/modalAsideCarrito.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Orbitron:wght@500&family=Roboto&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/fe4d659710.js" crossorigin="anonymous"></script>
   <title>MarketPlace con CoderHouse</title>
 
 </head>
-
 <body>
+  <div class="headerTop">
+    <div class="headerTopLeft">
+      <img src="img/brand/logitech.png" alt="">
+      <img src="img/brand/amd.png" alt="">
+      <img src="img/brand/ati.png" alt="">
+      <img src="img/brand/intel.jpg" alt="">
+      <img src="img/brand/ryzen.jpg" alt="">
+      <img src="img/brand/geforce.png" alt="">
+      <img src="img/brand/ps.png" alt="">
+      <img src="img/brand/xbox.png" alt="">
+      <img src="img/brand/ns.jpg" alt="">
+    </div>
+    <div class="headerTopRight">
+      <p><i class="fa-brands fa-whatsapp"></i>Whatsapp: +54 9 1134914424</p>
+      <p><i class="fa-solid fa-envelope"></i>Ventas: ventas@setupgg.com.ar</p>
+    </div>
+  </div>
   <!-- banner principal -->
   <div class="shadow  bannerPrincipal">
     <div>
-      <h1 class="h1 titulo">MerchOnline</h1>
+      <h1 class="h1 titulo">Setup.gg</h1>
     </div>
       <div class="socialNav">
         <a href="#"><i class="fa-brands fa-instagram"></i></a>
@@ -74,7 +92,7 @@
         <span class="totalCarrito">Total: $</span>
         <span id="precioTotal">0</span>
       </div>
-      <div class="modalFinalizarCompra">
+      <div class="modalIniciarCompra">
         <button id="modalFinalizarCompra">Iniciar Compra</button>
         <p id="cerrarModal">Seguir comprando</p>
       </div>
@@ -152,20 +170,58 @@
   <div class="containerProductos">
     <!-- filtros testing -->
     <aside class="asideProductos">
-      <h5>Hardware y Componentes</h5>
+      <h5>Ordenar por:</h5>
       <ul>
-        <li><a href="#">Precio: menor</a></li>
-        <li><a href="#">Envio Gratis</a></li>
-        <li><a href="#">Descuentos</a></li>
-        <li><a href="#">40% off</a></li>
-        <li><a href="#">Otros</a></li>
+        <li><a href="#">Menor a Mayor Precio</a></li>
+        <li><a href="#">Mayor a menor Precio</a></li>
+      </ul>
+      <h5>Ordernar por:</h5>
+      <ul>
+        <li><a href="#">Nombre</a></li>
+      </ul>
+      <h5>Categorias:</h5>
+      <ul>
+        <li><a href="#">Todos los productos</a></li>
+        <li><a href="#">Sillas</a></li>
+        <li><a href="#">Placas de video</a></li>
+        <li><a href="#">Perisfericos</a></li>
+        <li><a href="#">Discos</a></li>
+        <li><a href="#">Procesadores</a></li>
+        <li><a href="#">TV</a></li>
+        <li><a href="#">Consolas</a></li>
+        <li><a href="#">Escritorios</a></li>
       </ul>
     </aside>
     <div class="container" id="contenedorProductos"></div>
   </div>
 
-  <footer>
-    <div class="text-center" id="footer">
+  <footer id="footer">
+
+    <div class="footerContainer">
+      <div></div>
+      <div class="footerBox1">
+        
+        <a href="#footer">Peron 2100 Local 360 (San Miguel)</a>
+        <a href="#footer">Venta a empresas: ventas@setupgg.com.ar</a>
+        <a href="#footer">Whatsapp +54 9 11 3491 4424</a>
+        <a href="#footer">Servicio al Cliente</a>
+        <a href="#footer">Politicas de Garantia</a>
+        <a href="#footer">Envios</a>
+        <a href="#footer">Contactenos</a>
+
+      </div>
+      <div class="footerBox2">
+        <a href="#footer">Para comprar: ventas@setupgg.com.ar</a>
+        <a href="#footer">+54 911 3491 4424</a>
+        <a href="#footer">Nosotros</a>
+        <a href="#footer">Condiciones de uso</a>
+        <a href="#footer">Como Comprar?</a>
+        <a href="#footer">Politicas de privacidad</a>
+      </div>
+      <div></div>
+    </div>
+
+    <div class="text-center" id="endFooter">
       <span>Hecho en CoderHouse con mucho ☕ y 💻.</span>
     </div>
   </footer>

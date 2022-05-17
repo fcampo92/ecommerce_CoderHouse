@@ -24,7 +24,7 @@ selectProductos.addEventListener('change',()=>{
 mostrarProductos(dbProductos);
 
 //logica de ecommerce
-function mostrarProductos(array) {
+/* function mostrarProductos(array) {
   //limpia el mostrar productos antes de aplicar el filtro
   contenedorProductos.innerHTML ="";
   //recorre array y genera etiquetas con clases y estilos para ser mostrados en el DOM
@@ -43,7 +43,6 @@ function mostrarProductos(array) {
                         </div>
                     </div>
     `;
-
     contenedorProductos.appendChild(div);
     //guarda en la variable btnAgregar cual es el boton que hizo clic en +
     let btnAgregar = document.getElementById(`agregar${item.id}`);
@@ -51,7 +50,51 @@ function mostrarProductos(array) {
       agregarAlCarrito(item.id);
     });
   });
+} */
+
+function mostrarProductos(array) {
+  //limpia el mostrar productos antes de aplicar el filtro
+  contenedorProductos.innerHTML ="";
+  
+  //funcion async trae los datos desde un archivo JSON
+  async function fetchProductosJSON() {
+    const response = await fetch('./json/dbProductos.json');
+    const dbProductos = await response.json();
+    return dbProductos;
+  
+  }
+
+  fetchProductosJSON().then(() =>{
+    //recorre array y genera etiquetas con clases y estilos para ser mostrados en el DOM
+    array.forEach((item) => {
+      let div = document.createElement("div");
+      div.className = "card shadow";
+      div.style = "margin: .5rem";
+      div.innerHTML += `
+                  <img src=${item.img} class="card-img-top" alt="...">
+                      <div class="card-body">
+                          <h5 class="card-title">${item.nombre}</h5>
+                          <p class="m-0 card-text">Precio: ${item.precio} $ARS</p>
+                          <div class="p-0 m-0" style="text-align: center">
+                          <hr>
+                          <p id="agregar${item.id}" class="btn btn-success m-0">Agregar al carrito</p>
+                          </div>
+                      </div>
+      `;
+      contenedorProductos.appendChild(div);
+      //guarda en la variable btnAgregar cual es el boton que hizo clic en +
+      let btnAgregar = document.getElementById(`agregar${item.id}`);
+      btnAgregar.addEventListener("click", () => {
+        agregarAlCarrito(item.id);
+      });
+    });
+    
+  });
+
 }
+
+
+
 
 //agrega productos al carrito y verifica si tiene un mismo producto para agregar cantidad de unidades
 function agregarAlCarrito(id) {
