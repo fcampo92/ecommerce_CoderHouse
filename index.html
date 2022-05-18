@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="es">
 
@@ -245,3 +246,200 @@
 </html>
 
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Play:wght@700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="./css/estilos.css" />
+    <link rel="stylesheet" href="./css/modalAsideCarrito.css" />
+    <link rel="stylesheet" href="./css/footer.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Setup.GG</title>
+  </head>
+
+  <body>
+    <!-- Header inicio -->
+    <div class="headerContainer">
+      <div class="headerContact">
+        <span>Whatsapp: +54 911 34914424</span>
+        <span>Ventas: ventas@setupgg.com</span>
+      </div>
+      <div class="headerSocialNetworks">
+        <span class="material-symbols-outlined"> account_circle </span>
+        <span class="material-symbols-outlined" id="lightMode">
+          light_mode
+        </span>
+        <span class="material-symbols-outlined" id="darkMode"> dark_mode </span>
+      </div>
+      <div class="title">
+        <h1>SETUP.GG</h1>
+        <span class="material-symbols-outlined" id="spanCart"
+          >shopping_cart<span id="contCarrito">0</span></span
+        >
+      </div>
+    </div>
+    <!-- Header fin -->
+    <!-- Carrousel inicio -->
+    <img src="./img/carrousel/banner1.jpg" alt="" />
+    <!-- Carrousel fin -->
+    <!-- Productos en pantalla inicio -->
+    <div class="productsContainer">
+      <!--       <div class="card">
+        <div class="topCard">
+          <img src="./img/mouse1.jpg" alt="">
+        </div>
+        <div class="botCard">
+          <h5>Mouse Logitech</h5>
+          <span>$6000</span>
+          <p>Agregar al carrito</p>
+        </div>
+      </div> -->
+    </div>
+    <!-- Productos en pantalla fin -->
+    <!-- Modal para mostrar el carrito inicio-->
+    <div class="modalCarrito">
+      <div class="modalContentCarrito">
+        <div class="modalHeaderCarrito">
+          <h2>Carrito de Compras</h2>
+        </div>
+        <div id="cartContainer"></div>
+        <div>
+          <hr />
+          <span class="totalCarrito">Total: $</span>
+          <span id="precioTotal">0</span>
+        </div>
+        <div class="modalIniciarCompra">
+          <button id="modalFinalizarCompra">Iniciar Compra</button>
+          <p id="cerrarModal">Seguir comprando</p>
+        </div>
+      </div>
+    </div>
+    <!-- modal para mostrar carrito fin-->
+    <!-- modal para pasar a pagar el carrito inicio -->
+    <div class="modalCheckout">
+      <div class="modalContentCheckout">
+        <h2 class="text-center">MÉTODO DE PAGO</h2>
+
+        <form action="" class="formatForm">
+          <select name="tarjetas" id="formContentCard">
+            <option value="vcredito">Visa Debito</option>
+            <option value="vdebito">Visa Credito</option>
+            <option value="mcredito">MasterCard Credito</option>
+            <option value="mdebito">MasterCard Debito</option>
+          </select>
+          <label for="card" id="titleCardForm">Numero de tarjeta</label>
+          <input
+            type="text"
+            placeholder="XXXX-XXXX-XXXX-XXXX"
+            id="contentCardForm"
+          />
+          <select name="bancos" id="formContentBank">
+            <option value="Banco Galicia">Banco Galicia</option>
+            <option value="Banco Nacion">Banco Nacion</option>
+            <option value="Banco Frances">Banco Frances</option>
+            <option value="Banco Provincia">Banco Provincia</option>
+            <option value="Banco Patagonico">Banco Patagonico</option>
+            <option value="Banco Santander">Banco Santander</option>
+          </select>
+          <label for="expiration" id="expCardForm">Mes de vencimiento</label>
+          <select name="expiration" id="expForm">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+          <label for="yearExpiration">Año de vencimiento</label>
+          <select name="yearExpiration" id="yearExpirationForm">
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+          </select>
+          <label for="nombreImpresoEnTarjeta" id="fullNameCard"
+            >Nombre y Apellido impreso en la tarjeta</label
+          >
+          <input
+            type="text"
+            name="nombreImpresoEnTarjeta"
+            id="fullNameCardForm"
+          />
+          <label for="codeCard" id="codeCard">Codigo de seguridad</label>
+          <input type="text" id="codeCardForm" name="codeCard" />
+          <label for="DI" id="titleDI">Numero de Documento</label>
+          <select name="DI" id="DIForm">
+            <option value="DNI">DNI</option>
+            <option value="DNI">CUIL</option>
+            <option value="DNI">CUIT</option>
+          </select>
+          <input type="text" name="DI" id="DINumberForm" />
+          <input type="submit" id="submitButton" value="Finalizar Compra" />
+          <hr />
+          <span id="precioTotalCheckout">Precio Total: $</span>
+          <span id="precioTotal1"></span>
+        </form>
+      </div>
+    </div>
+    <!-- modal para pasar a pagar el carrito fin -->
+
+    <!-- Footer inicia -->
+    <footer id="footer">
+
+      <div class="footerContainer">
+        <div></div>
+        <div class="footerBox1">
+          
+          <a href="#footer">Peron 2100 Local 360 (San Miguel)</a>
+          <a href="#footer">Venta a empresas: ventas@setupgg.com.ar</a>
+          <a href="#footer">Whatsapp +54 9 11 3491 4424</a>
+          <a href="#footer">Servicio al Cliente</a>
+          <a href="#footer">Politicas de Garantia</a>
+          <a href="#footer">Envios</a>
+          <a href="#footer">Contactenos</a>
+  
+        </div>
+        <div class="footerBox2">
+          <a href="#footer">Para comprar: ventas@setupgg.com.ar</a>
+          <a href="#footer">+54 911 3491 4424</a>
+          <a href="#footer">Nosotros</a>
+          <a href="#footer">Condiciones de uso</a>
+          <a href="#footer">Como Comprar?</a>
+          <a href="#footer">Politicas de privacidad</a>
+        </div>
+        <div></div>
+      </div>
+  
+      <div class="text-center" id="endFooter">
+        <span>Hecho en CoderHouse con mucho ☕ y 💻.</span>
+      </div>
+    </footer>
+    <!-- footer termina -->
+
+    <script src="./js/jscript.js"></script>
+    <script src="./js/jmodoOscuro.js"></script>
+    <script src="./js/jModalCart.js"></script>
+    <script src="sweetalert2.all.min.js"></script>
+  </body>
+</html>
+>>>>>>> 4a36e38 (setupggv2)
