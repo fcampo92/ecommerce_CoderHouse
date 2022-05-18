@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* header superior  */ 
+.headerContainer{
+    background-color: #fff ;
+    background: #000;
+}
+
+.headerContact{
+    color: #fff;
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.headerContact span{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: small;
+    padding: 0 .5rem;
+    margin: auto 0;
+}
+
+@media screen and (max-width: 600px ) {
+    .headerContainer{
+    
+}
+    
+}
+
+/* barra de redes sociales */
+
+.headerSocialNetworks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #000;
+    color: #fff;
+}
+
+.headerSocialNetworks span{
+    padding: 0 .5rem;
+}
+
+.headerSocialNetworks span:hover{
+    cursor: pointer;
+}
+
+/* Titulo de la pagin */
+.title{
+    color: #fff;
+    font-family: 'Play', sans-serif;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 .5rem;
+}
+.title h1{
+    cursor: pointer;
+    margin: 0 .3rem;
+}
+
+/* Boton de carrito */
+.title span{
+    
+    cursor: pointer;
+}
+
+#spanCart{
+    height: 1.5rem;
+    border-radius: 100%;
+}
+
+#spanCart:hover{
+    background-color: greenyellow;
+}
+
+
+#contCarrito{
+    background-color: red;
+    border-radius: 100%;
+    padding: .1rem;
+    margin: 0 .5rem;
+    color: #fff;
+    font-size: .5rem;
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    right: 0;
+
+}
+
+
+
+/* testing */
+img{
+    width: 100%;
+}
+
+
+/* Card de productos*/
+
+.productsContainer{
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 .5rem;
+    
+}
+
+.card{
+    /* background-color: #000;
+    color: #fff; */
+    background-color: #fff;
+    width: 10rem;
+    border: #ccc solid 1px;
+    padding: .5rem;
+    border-radius: .5rem;
+    margin: .5rem 0;
+    box-shadow: #ccc 1px 1px 3px;
+}
+.card:hover{
+    box-shadow: #ccc 1px 1px 10px;
+}
+
+.botCard{
+    display: flex;
+    flex-direction: column;
+}
+
+.botCard h5{
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    height: 2rem;
+}
+
+.botCard span{
+    text-align: center;
+    padding: 1rem 0;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
+.botCard p {
+    font-size: .9rem;
+    font-family: sans-serif;
+    text-align: center;
+    background-color: rgb(0, 128, 0);
+    color: #fff;
+    padding: .5rem;
+    border-radius: 3rem;
+}
+
+.botCard p:hover {
+    cursor: pointer;
+    background-color: rgb(0, 158, 0);
+}
+
