@@ -1,5 +1,3 @@
-//nodo en DOM
-
 //boton para abrir el modal que contiene el carrito
 const btnModalCart = document.querySelector("#spanCart");
 //boton 'seguir comprando' que cierra el modal para volver a los productos
