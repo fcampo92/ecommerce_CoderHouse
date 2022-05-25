@@ -1,252 +1,3 @@
-<<<<<<< HEAD
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="css/modalProductoAgregado.css">
-  <link rel="stylesheet" href="css/modal.css" />
-  <link rel="stylesheet" href="css/card.css">
-  <link rel="icon" href="img/icon.png" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-  <link rel="stylesheet" href="css/modalAsideCarrito.css">
-  <link rel="stylesheet" href="css/footer.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Orbitron:wght@500&family=Roboto&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/fe4d659710.js" crossorigin="anonymous"></script>
-  <title>MarketPlace con CoderHouse</title>
-
-</head>
-<body>
-  <div class="headerTop">
-    <div class="headerTopLeft">
-      <img src="img/brand/logitech.png" alt="">
-      <img src="img/brand/amd.png" alt="">
-      <img src="img/brand/ati.png" alt="">
-      <img src="img/brand/intel.jpg" alt="">
-      <img src="img/brand/ryzen.jpg" alt="">
-      <img src="img/brand/geforce.png" alt="">
-      <img src="img/brand/ps.png" alt="">
-      <img src="img/brand/xbox.png" alt="">
-      <img src="img/brand/ns.jpg" alt="">
-    </div>
-    <div class="headerTopRight">
-      <p><i class="fa-brands fa-whatsapp"></i>Whatsapp: +54 9 1134914424</p>
-      <p><i class="fa-solid fa-envelope"></i>Ventas: ventas@setupgg.com.ar</p>
-    </div>
-  </div>
-  <!-- banner principal -->
-  <div class="shadow  bannerPrincipal">
-    <div>
-      <h1 class="h1 titulo">Setup.gg</h1>
-    </div>
-      <div class="socialNav">
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-        <a href="#"><i class="fa-brands fa-youtube"></i></a>
-        <a href="#" id="login"><i class="fa-solid fa-user"></i></a>
-        <a href="#" id="modoNoche"><i class="fa-solid fa-moon"></i></a>
-        <a href="#" id="modoDia"><i class="fa-solid fa-sun"></i></a>
-        <!-- <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>     -->   
-      </div>
-      
-    <div class="subMenu">
-      <!-- filtro de productos -->
-      <div id="containerSelect">
-        <select id="selectProductos">
-          <option id="filterOption" value="all">Todos</option>
-          <option id="filterOption" value="silla">Sillas</option>
-          <option id="filterOption" value="placa de video">Placas de video</option>
-          <option id="filterOption" value="perisferico">Perisfericos</option>
-          <option id="filterOption" value="procesador">Procesadores</option>
-          <option id="filterOption" value="disco">Discos</option>
-          <option id="filterOption" value="tv">Tv</option>
-          <option id="filterOption" value="consola">Consolas</option>
-          <option id="filterOption" value="escritorio">Escritorio</option>
-        </select>
-      </div>
-
-      <!-- boton de carrito -->
-      <button id="myBtn">
-        <i class="material-icons text-success" id="iconCarrito">shopping_cart</i>
-        <p class="text-success" id="contadorCarrito">0</p>
-      </button>
-    </div>
-  </div>
-
-  <!-- modal para mostrar carrito -->
-  <div class="modalCarrito">
-    <div class="modalContentCarrito">
-      <div class="modalHeaderCarrito">
-        <h2>Carrito de Compras</h2>
-      </div>
-      <div class="" id="contenedorCarrito">
-      </div>
-      <div>
-        <hr>
-        <span class="totalCarrito">Total: $</span>
-        <span id="precioTotal">0</span>
-      </div>
-      <div class="modalIniciarCompra">
-        <button id="modalFinalizarCompra">Iniciar Compra</button>
-        <p id="cerrarModal">Seguir comprando</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- modal checkout -->
-
-  <div class="modalCheckout">
-    <div class="modalContentCheckout">
-      <h2 class="text-center">MÉTODO DE PAGO</h2>
-
-      <form action="" class="formatForm">
-        <select name="tarjetas" id="formContentCard">
-          <option value="vcredito">Visa Debito</option>
-          <option value="vdebito">Visa Credito</option>
-          <option value="mcredito">MasterCard Credito</option>
-          <option value="mdebito">MasterCard Debito</option>
-        </select>
-        <label for="card" id="titleCardForm">Numero de tarjeta</label>
-        <input type="text" placeholder="XXXX-XXXX-XXXX-XXXX" id="contentCardForm">
-        <select name="bancos" id="formContentBank">
-          <option value="Banco Galicia">Banco Galicia</option>
-          <option value="Banco Nacion">Banco Nacion</option>
-          <option value="Banco Frances">Banco Frances</option>
-          <option value="Banco Provincia">Banco Provincia</option>
-          <option value="Banco Patagonico">Banco Patagonico</option>
-          <option value="Banco Santander">Banco Santander</option>
-        </select>
-        <label for="expiration" id="expCardForm">Mes de vencimiento</label>
-        <select name="expiration" id="expForm">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-          <option value="10">10</option>
-          <option value="11">11</option>
-          <option value="12">12</option>
-        </select>
-        <label for="yearExpiration">Año de vencimiento</label>
-        <select name="yearExpiration" id="yearExpirationForm">
-          <option value="2022">2022</option>
-          <option value="2023">2023</option>
-          <option value="2024">2024</option>
-          <option value="2025">2025</option>
-          <option value="2026">2026</option>
-        </select>
-        <label for="nombreImpresoEnTarjeta" id="fullNameCard">Nombre y Apellido impreso en la tarjeta</label>
-        <input type="text" name="nombreImpresoEnTarjeta" id="fullNameCardForm">
-        <label for="codeCard" id="codeCard">Codigo de seguridad</label>
-        <input type="text" id="codeCardForm" name="codeCard">
-        <label for="DI" id="titleDI">Numero de Documento</label>
-        <select name="DI" id="DIForm">
-          <option value="DNI">DNI</option>
-          <option value="DNI">CUIL</option>
-          <option value="DNI">CUIT</option>
-        </select>
-        <input type="text" name="DI" id="DINumberForm">
-        <input type="submit" id="submitButton" value="Finalizar Compra">
-        <hr>
-        <span id="precioTotalCheckout">Precio Total: $</span>
-        <span id="precioTotal1"></span>
-      </form>
-
-      </div>
-    </div>
-  </div>
-
-  <!-- Contenedor de productos -->
-  <div class="containerProductos">
-    <!-- filtros testing -->
-    <aside class="asideProductos">
-      <h5>Ordenar por:</h5>
-      <ul>
-        <li><a href="#">Menor a Mayor Precio</a></li>
-        <li><a href="#">Mayor a menor Precio</a></li>
-      </ul>
-      <h5>Ordernar por:</h5>
-      <ul>
-        <li><a href="#">Nombre</a></li>
-      </ul>
-      <h5>Categorias:</h5>
-      <ul>
-        <li><a href="#">Todos los productos</a></li>
-        <li><a href="#">Sillas</a></li>
-        <li><a href="#">Placas de video</a></li>
-        <li><a href="#">Perisfericos</a></li>
-        <li><a href="#">Discos</a></li>
-        <li><a href="#">Procesadores</a></li>
-        <li><a href="#">TV</a></li>
-        <li><a href="#">Consolas</a></li>
-        <li><a href="#">Escritorios</a></li>
-      </ul>
-    </aside>
-    <div class="container" id="contenedorProductos"></div>
-  </div>
-
-  <footer id="footer">
-
-    <div class="footerContainer">
-      <div></div>
-      <div class="footerBox1">
-        
-        <a href="#footer">Peron 2100 Local 360 (San Miguel)</a>
-        <a href="#footer">Venta a empresas: ventas@setupgg.com.ar</a>
-        <a href="#footer">Whatsapp +54 9 11 3491 4424</a>
-        <a href="#footer">Servicio al Cliente</a>
-        <a href="#footer">Politicas de Garantia</a>
-        <a href="#footer">Envios</a>
-        <a href="#footer">Contactenos</a>
-
-      </div>
-      <div class="footerBox2">
-        <a href="#footer">Para comprar: ventas@setupgg.com.ar</a>
-        <a href="#footer">+54 911 3491 4424</a>
-        <a href="#footer">Nosotros</a>
-        <a href="#footer">Condiciones de uso</a>
-        <a href="#footer">Como Comprar?</a>
-        <a href="#footer">Politicas de privacidad</a>
-      </div>
-      <div></div>
-    </div>
-
-    <div class="text-center" id="endFooter">
-      <span>Hecho en CoderHouse con mucho ☕ y 💻.</span>
-    </div>
-  </footer>
-
-  <!-- Scripts Bootstrap, stock y app -->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <script src="js/login.js"></script>
-  <script src="js/modoNocheDia.js"></script>
-  <script src="js/stock.js"></script>
-  <script src="js/modalAsideCarrito.js"></script>
-  <script src="js/script.js"></script>
-</body>
-
-</html>
-
-
-=======
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -264,9 +15,9 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
     <link rel="stylesheet" href="./css/estilos.css" />
-    <link rel="stylesheet" href="./css/modalAsideCarrito.css" />
-    <link rel="stylesheet" href="./css/footer.css">
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="./css/modalCart.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/carrousel.css">
     <title>Setup.GG</title>
   </head>
 
@@ -278,11 +29,20 @@
         <span>Ventas: ventas@setupgg.com</span>
       </div>
       <div class="headerSocialNetworks">
-        <span class="material-symbols-outlined"> account_circle </span>
-        <span class="material-symbols-outlined" id="lightMode">
-          light_mode
-        </span>
+        <span class="material-symbols-outlined" id="login"> account_circle </span>
+        <span class="" id="user"></span>
+        <span class="material-symbols-outlined" id="lightMode">light_mode</span>
         <span class="material-symbols-outlined" id="darkMode"> dark_mode </span>
+      </div>
+      <div class="brand">
+        <img src="/img/brand/amd.png" alt="">
+        <img src="/img/brand/intel.jpg" alt="">
+        <img src="/img/brand/logitech.png" alt="">
+        <img src="/img/brand/ati.png" alt="">
+        <img src="/img/brand/geforce.png" alt="">
+        <img src="/img/brand/ps.png" alt="">
+        <img src="/img/brand/ns.jpg" alt="">
+        <img src="/img/brand/xbox.png" alt="">
       </div>
       <div class="title">
         <h1>SETUP.GG</h1>
@@ -292,22 +52,48 @@
       </div>
     </div>
     <!-- Header fin -->
+<!-- carrousel inicio -->
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <img src="/img/carrousel/banner1.jpg" style="">
+      </div>
+      <div class="mySlides fade">
+        <img src="/img/carrousel/logitech1.jpg" style="">
+      </div>
+      <div class="mySlides fade">
+        <img src="/img/carrousel/nintendobanner.jpg" style="">
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>
+<!-- carrousel fin -->
+<!-- filtros inicio -->
+    <div class="selectorContainer">
+      <select name="filter" id="select">
+        <option value="Todos">Todos</option>
+        <option value="periferico">Perifericos</option>
+        <option value="procesador">Procesadores</option>
+        <option value="placa de video">Placas de video</option>
+        <option value="disco">Discos</option>
+        <option value="silla">Sillas</option>
+        <option value="consola">Consolas</option>
+        <option value="tv">TVs</option>
+        <option value="escritorio">Escritorios</option>
+      </select>
+      <select name="ordenarPor" id="selectOrdenar">
+        <option value="">Ordenar Por</option>
+        <option value="mayor">Mayor Precio</option>
+        <option value="menor">Menor Precio</option>
+        <option value="ascendente">Alfabetico Ascendente</option>
+        <option value="descendente">Alfabetico Descendente</option>
+      </select>
+    </div>
     <!-- Carrousel inicio -->
-    <img src="./img/carrousel/banner1.jpg" alt="" />
+    <!--     <img src="./img/carrousel/banner1.jpg" alt="" /> -->
     <!-- Carrousel fin -->
     <!-- Productos en pantalla inicio -->
-    <div class="productsContainer">
-      <!--       <div class="card">
-        <div class="topCard">
-          <img src="./img/mouse1.jpg" alt="">
-        </div>
-        <div class="botCard">
-          <h5>Mouse Logitech</h5>
-          <span>$6000</span>
-          <p>Agregar al carrito</p>
-        </div>
-      </div> -->
-    </div>
+    <div class="productsContainer"></div>
     <!-- Productos en pantalla fin -->
     <!-- Modal para mostrar el carrito inicio-->
     <div class="modalCarrito">
@@ -331,7 +117,7 @@
     <!-- modal para pasar a pagar el carrito inicio -->
     <div class="modalCheckout">
       <div class="modalContentCheckout">
-        <h2 class="text-center">MÉTODO DE PAGO</h2>
+        <h2 class="">MÉTODO DE PAGO</h2>
 
         <form action="" class="formatForm">
           <select name="tarjetas" id="formContentCard">
@@ -395,9 +181,9 @@
           </select>
           <input type="text" name="DI" id="DINumberForm" />
           <input type="submit" id="submitButton" value="Finalizar Compra" />
-          <hr />
-          <span id="precioTotalCheckout">Precio Total: $</span>
-          <span id="precioTotal1"></span>
+          <button id="deleteBuy">Cancelar compra</button>
+          <span id="tituloPrecioTotal">Precio Total: $</span>
+          <span id="precioTotalaPagar"></span>
         </form>
       </div>
     </div>
@@ -405,11 +191,8 @@
 
     <!-- Footer inicia -->
     <footer id="footer">
-
       <div class="footerContainer">
-        <div></div>
         <div class="footerBox1">
-          
           <a href="#footer">Peron 2100 Local 360 (San Miguel)</a>
           <a href="#footer">Venta a empresas: ventas@setupgg.com.ar</a>
           <a href="#footer">Whatsapp +54 9 11 3491 4424</a>
@@ -417,7 +200,6 @@
           <a href="#footer">Politicas de Garantia</a>
           <a href="#footer">Envios</a>
           <a href="#footer">Contactenos</a>
-  
         </div>
         <div class="footerBox2">
           <a href="#footer">Para comprar: ventas@setupgg.com.ar</a>
@@ -427,9 +209,7 @@
           <a href="#footer">Como Comprar?</a>
           <a href="#footer">Politicas de privacidad</a>
         </div>
-        <div></div>
       </div>
-  
       <div class="text-center" id="endFooter">
         <span>Hecho en CoderHouse con mucho ☕ y 💻.</span>
       </div>
@@ -437,9 +217,11 @@
     <!-- footer termina -->
 
     <script src="./js/jscript.js"></script>
+    <script src="./js/jcarrousel.js"></script>
+    <script src="./js/jfilter.js"></script>
     <script src="./js/jmodoOscuro.js"></script>
     <script src="./js/jModalCart.js"></script>
-    <script src="sweetalert2.all.min.js"></script>
+    <script src="./js/jlogin.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>
->>>>>>> 4a36e38 (setupggv2)

@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 /* header superior  */ 
@@ -17,25 +16,18 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: .5rem;
 
 }
 
 .headerContact span{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: small;
-    padding: 0 .5rem;
+    /* padding: 0 .5rem; */
     margin: auto 0;
 }
 
-@media screen and (max-width: 600px ) {
-    .headerContainer{
-    
-}
-    
-}
-
 /* barra de redes sociales */
-
 .headerSocialNetworks{
     display: flex;
     flex-direction: row;
@@ -44,42 +36,55 @@
     color: #fff;
 }
 
-.headerSocialNetworks span{
-    padding: 0 .5rem;
-}
-
 .headerSocialNetworks span:hover{
     cursor: pointer;
+}
+
+#user{
+    margin: auto 0;
+    font-size: 1.5rem;
+    color: #fff;
 }
 
 /* Titulo de la pagin */
 .title{
     color: #fff;
     font-family: 'Play', sans-serif;
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    padding: 0 .5rem;
+    padding: .5rem;
 }
 .title h1{
     cursor: pointer;
     margin: 0 .3rem;
+    text-align: center;
+}
+
+.brand{
+    display: none;
+}
+
+.brand img {
+    height: 2.9375em ;
+    padding: 0 .2rem ;
 }
 
 /* Boton de carrito */
 .title span{
-    
     cursor: pointer;
 }
 
 #spanCart{
+
     height: 1.5rem;
-    border-radius: 100%;
+    border-radius: 10%;
 }
 
 #spanCart:hover{
     background-color: greenyellow;
+    color: #000;
 }
 
 
@@ -96,13 +101,87 @@
 
 }
 
+/* Filtro de productos */
 
+.selectorContainer{
 
-/* testing */
-img{
-    width: 100%;
+    border: #ccc solid 1px;
+    border-radius: .5rem;
+    padding: .5rem;
+    margin: .5rem 1rem ; 
+    box-shadow: #ccc 1px 1px 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
+#select{
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+    #select{
+        width: 100%;
+    }
+    #selectOrdenar{
+        display: block;
+
+    }
+}
+
+@media screen and (min-width: 650px){
+    .headerContact span{
+        font-size: 1.5rem;
+        display: inline-block;
+    }
+    .brand{
+        background-color: #333;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .title h1{
+        font-size: 3rem;
+    }
+
+    .title span{
+        font-size: 3rem;
+    }
+    #contCarrito{
+        font-size: 1rem;
+        padding: 0 auto;
+    }
+
+    #spanCart{
+        height: 100%;
+    }
+
+    .headerSocialNetworks{
+        margin: .5rem;
+    }
+
+    .headerSocialNetworks span{
+        font-size: 3rem;
+    }
+
+    .productsContainer div{
+        width: 14rem;
+    
+    }
+    .card{
+        box-sizing: content-box;
+        padding: .5rem;
+        margin: 0
+    }
+}
+
+#selectOrdenar{
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+}
 
 /* Card de productos*/
 
@@ -110,25 +189,27 @@ img{
     background-color: #fff;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
-    padding: 0 .5rem;
     
 }
 
 .card{
-    /* background-color: #000;
-    color: #fff; */
     background-color: #fff;
     width: 10rem;
     border: #ccc solid 1px;
-    padding: .5rem;
     border-radius: .5rem;
-    margin: .5rem 0;
+    padding: .5rem;
+    margin: .5rem;
     box-shadow: #ccc 1px 1px 3px;
 }
 .card:hover{
     box-shadow: #ccc 1px 1px 10px;
+}
+
+.topCard img{
+    width: 100%;
+
 }
 
 .botCard{

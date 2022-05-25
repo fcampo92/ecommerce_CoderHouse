@@ -9,6 +9,7 @@ darkMode.style.display = "none";
 if (localStorage.getItem('darkMode')=='true'){
     lightMode.style.display = "none";
     darkMode.style.display = "inline";
+    document.querySelector(".productsContainer").style.backgroundColor = '#000'
 }
 
 if(localStorage.getItem('darkMode')=='false'){
@@ -21,9 +22,13 @@ lightMode.addEventListener("click",()=>{
     lightMode.style.display = "none";
     darkMode.style.display = "inline";
     localStorage.setItem('darkMode','true');
+    document.querySelector(".productsContainer").style.backgroundColor = '#000'
 });
 darkMode.addEventListener("click",()=>{
     darkMode.style.display = "none";
     lightMode.style.display = "inline";
     localStorage.setItem('darkMode', 'false');
+    document.querySelector(".productsContainer").style.backgroundColor = '#fff'
 });
+
+

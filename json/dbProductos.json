@@ -1,24 +1,23 @@
-<<<<<<< HEAD
 [
     {
       "id": 1,
-      "nombre": "Mouse",
+      "nombre": "Mouse Logitech",
       "precio": 4500,
       "descripcion": "",
-      "tipo": "perisferico",
+      "tipo": "periferico",
       "img": "img/mouse1.jpg"
     },
     {
       "id": 2,
-      "nombre": "Teclado",
+      "nombre": "Teclado Mecánico",
       "precio": 6000,
       "descripcion": "",
-      "tipo": "perisferico",
+      "tipo": "periferico",
       "img": "img/teclado1.jpg"
     },
     {
       "id": 3,
-      "nombre": "Procesador Intel",
+      "nombre": "Procesador Intel i5 5500k",
       "precio": 60000,
       "descripcion": "",
       "tipo": "procesador",
@@ -26,7 +25,7 @@
     },
     {
       "id": 4,
-      "nombre": "Procesador AMD",
+      "nombre": "Procesador AMD Ryzen 3 2200g",
       "precio": 40000,
       "descripcion": "",
       "tipo": "procesador",
@@ -34,7 +33,7 @@
     },
     {
       "id": 5,
-      "nombre": "Placa GeForce",
+      "nombre": "Placa GeForce 1060",
       "precio": 250000,
       "descripcion": "",
       "tipo": "placa de video",
@@ -95,20 +94,20 @@
       "id": 13,
       "nombre": "Mouse Pikachu",
       "precio": 7000,
-      "tipo": "perisferico",
+      "tipo": "periferico",
       "img": "img/mouse2.jpg"
     },
     {
       "id": 14,
       "nombre": "Teclado Numerico",
       "precio": 8000,
-      "tipo": "perisferico",
+      "tipo": "periferico",
       "img": "img/teclado2.jpg"
     },
     {
       "id": 15,
       "nombre": "TV 32 Samsung",
-      "precio": 450000,
+      "precio": 45000,
       "tipo": "tv",
       "img": "img/tv1.jpg"
     },
@@ -135,7 +134,7 @@
     },
     {
       "id": 19,
-      "nombre": "XBOX Series X",
+      "nombre": "Xbox Series X",
       "precio": 150000,
       "tipo": "consola",
       "img": "img/xbox1.jpg"
@@ -146,155 +145,208 @@
       "precio": 90000,
       "tipo": "consola",
       "img": "img/nintendo1.jpg"
-    }
-=======
-[
-    {
-      "id": 1,
-      "nombre": "Mouse",
-      "precio": 4500,
-      "descripcion": "",
-      "tipo": "perisferico",
-      "img": "img/mouse1.jpg"
     },
     {
-      "id": 2,
-      "nombre": "Teclado",
-      "precio": 6000,
-      "descripcion": "",
-      "tipo": "perisferico",
-      "img": "img/teclado1.jpg"
+      "id": 21,
+      "nombre": "Mouse Microsoft",
+      "precio": 2300,
+      "tipo": "periferico",
+      "img": "img/mouse3.jpg"
     },
     {
-      "id": 3,
-      "nombre": "Procesador Intel",
-      "precio": 60000,
-      "descripcion": "",
-      "tipo": "procesador",
-      "img": "img/i5.jpg"
+      "id": 22,
+      "nombre": "Mouse Logitech Lightsync Blue",
+      "precio": 5000,
+      "tipo": "periferico",
+      "img": "img/mouse4.jpg"
     },
     {
-      "id": 4,
-      "nombre": "Procesador AMD",
-      "precio": 40000,
-      "descripcion": "",
-      "tipo": "procesador",
-      "img": "img/amd.jpg"
+      "id": 23,
+      "nombre": "Mouse Razer RGB",
+      "precio": 7500,
+      "tipo": "periferico",
+      "img": "img/mouse5.png"
     },
     {
-      "id": 5,
-      "nombre": "Placa GeForce",
-      "precio": 250000,
-      "descripcion": "",
-      "tipo": "placa de video",
-      "img": "img/1660.jpg"
+      "id": 24,
+      "nombre": "Teclado Logitech G213",
+      "precio": 18300,
+      "tipo": "periferico",
+      "img": "img/teclado3.jpg"
     },
     {
-      "id": 6,
-      "nombre": "Placa de video ATI",
-      "precio": 180000,
-      "descripcion": "",
-      "tipo": "placa de video",
-      "img": "img/ati.jpg"
+      "id": 25,
+      "nombre": "Teclado Razer HuntsMan",
+      "precio": 12050,
+      "tipo": "periferico",
+      "img": "img/teclado4.jpg"
     },
     {
-      "id": 7,
-      "nombre": "SSD 128GB",
-      "precio": 4800,
-      "descripcion": "",
+      "id": 26,
+      "nombre": "Teclado Generico",
+      "precio": 4550,
+      "tipo": "periferico",
+      "img": "img/teclado5.jpg"
+    },
+    {
+      "id": 27,
+      "nombre": "Disco SSD WD BLUE",
+      "precio": 4999,
       "tipo": "disco",
-      "img": "img/ssd.jpg"
+      "img": "img/ssd2.jpg"
     },
     {
-      "id": 8,
-      "nombre": "Silla Hyper X",
-      "precio": 58000,
-      "tipo": "silla",
-      "img": "img/silla1.jpg"
+      "id": 28,
+      "nombre": "Disco SSD Patriot P210",
+      "precio": 4999,
+      "tipo": "disco",
+      "img": "img/ssd3.jpg"
     },
     {
-      "id": 9,
-      "nombre": "Silla Gamer Cobalt",
-      "precio": 4800,
-      "tipo": "silla",
-      "img": "img/silla2.jpg"
+      "id": 29,
+      "nombre": "Disco Sata WD GREEN",
+      "precio": 7599,
+      "tipo": "disco",
+      "img": "img/ssd4.jpg"
     },
     {
-      "id": 10,
-      "nombre": "Silla Series X",
-      "precio": 4800,
-      "tipo": "silla",
-      "img": "img/silla3.jpg"
+      "id": 30,
+      "nombre": "Disco SSD KINGSTON",
+      "precio": 4600,
+      "tipo": "disco",
+      "img": "img/ssd5.jpg"
     },
     {
-      "id": 11,
-      "nombre": "Silla Gamer Alfa",
-      "precio": 4800,
-      "tipo": "silla",
-      "img": "img/silla4.jpg"
+      "id": 31,
+      "nombre": "Intel i3 10th",
+      "precio": 23000,
+      "tipo": "procesador",
+      "img": "img/inteli3.jpg"
     },
     {
-      "id": 12,
-      "nombre": "PlayStation 5",
+      "id": 32,
+      "nombre": "Intel i7 9th",
+      "precio": 40000,
+      "tipo": "procesador",
+      "img": "img/inteli7.jpg"
+    },
+    {
+      "id": 33,
+      "nombre": "Ryzen 9",
+      "precio": 40000,
+      "tipo": "procesador",
+      "img": "img/ryzen9.jpg"
+    },
+    {
+      "id": 34,
+      "nombre": "Ryzen 5",
+      "precio": 20000,
+      "tipo": "procesador",
+      "img": "img/ryzen5.jpg"
+    },
+    {
+      "id": 35,
+      "nombre": "Radeon RX 590G",
       "precio": 150000,
+      "tipo": "placa de video",
+      "img": "img/placa1.jpg"
+    },
+    {
+      "id": 36,
+      "nombre": "Radeon RX 570G",
+      "precio": 129999,
+      "tipo": "placa de video",
+      "img": "img/placa2.png"
+    },
+    {
+      "id": 37,
+      "nombre": "GeForce GTX 1060 OC",
+      "precio": 189000,
+      "tipo": "placa de video",
+      "img": "img/placa3.jpg"
+    },
+    {
+      "id": 38,
+      "nombre": "Silla Gamer Ergonómica",
+      "precio": 68000,
+      "tipo": "silla",
+      "img": "img/silla5.jpg"
+    },
+    {
+      "id": 39,
+      "nombre": "Playstation 4",
+      "precio": 49000,
       "tipo": "consola",
-      "img": "img/ps5.jpg"
+      "img": "img/ps4.jpg"
     },
     {
-      "id": 13,
-      "nombre": "Mouse Pikachu",
-      "precio": 7000,
-      "tipo": "perisferico",
-      "img": "img/mouse2.jpg"
+      "id": 40,
+      "nombre": "Xbox One S 1tb",
+      "precio": 49000,
+      "tipo": "consola",
+      "img": "img/xbox2.jpg"
     },
     {
-      "id": 14,
-      "nombre": "Teclado Numerico",
-      "precio": 8000,
-      "tipo": "perisferico",
-      "img": "img/teclado2.jpg"
-    },
-    {
-      "id": 15,
-      "nombre": "TV 32 Samsung",
-      "precio": 450000,
+      "id": 41,
+      "nombre": "TV LG 32",
+      "precio": 40000,
       "tipo": "tv",
-      "img": "img/tv1.jpg"
+      "img": "img/tv3.jpg"
     },
     {
-      "id": 16,
-      "nombre": "TV 32 JVC",
-      "precio": 38000,
+      "id": 42,
+      "nombre": "TV SONY 4K",
+      "precio": 87000,
       "tipo": "tv",
-      "img": "img/tv2.jpg"
+      "img": "img/tv4.jpg"
     },
     {
-      "id": 17,
+      "id": 43,
+      "nombre": "TV NOBLEX 4K",
+      "precio": 77000,
+      "tipo": "tv",
+      "img": "img/tv5.jpg"
+    },
+    {
+      "id": 44,
+      "nombre": "Escritorio Classic 913 negro",
+      "precio": 12999,
+      "tipo": "escritorio",
+      "img": "img/desk3.jpg"
+    },
+    {
+      "id": 45,
+      "nombre": "Escritorio negro de madera",
+      "precio": 9999,
+      "tipo": "escritorio",
+      "img": "img/desk4.jpg"
+    },
+    {
+      "id": 46,
       "nombre": "Escritorio Gamer",
-      "precio": 30000,
+      "precio": 7999,
       "tipo": "escritorio",
-      "img": "img/desk1.jpg"
+      "img": "img/desk5.jpg"
     },
     {
-      "id": 18,
-      "nombre": "Escritorio Gamer RGB",
-      "precio": 50000,
-      "tipo": "escritorio",
-      "img": "img/desk2.jpg"
+      "id": 47,
+      "nombre": "Kit inalambrico gamer NOGA",
+      "precio": 7800,
+      "tipo": "periferico",
+      "img": "img/kit1.jpg"
     },
     {
-      "id": 19,
-      "nombre": "XBOX Series X",
-      "precio": 150000,
-      "tipo": "consola",
-      "img": "img/xbox1.jpg"
+      "id": 48,
+      "nombre": "Kit inalambrico gamer Generico",
+      "precio": 5900,
+      "tipo": "periferico",
+      "img": "img/kit2.jpg"
     },
     {
-      "id": 20,
-      "nombre": "Nintendo Switch",
-      "precio": 90000,
-      "tipo": "consola",
-      "img": "img/nintendo1.jpg"
+      "id": 49,
+      "nombre": "Kit inalambrico gamer HP",
+      "precio": 8800,
+      "tipo": "periferico",
+      "img": "img/kit3.jpg"
     }
->>>>>>> 4a36e38 (setupggv2)
-  ]
+]
